@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CustomWebViewExample" xmlns:controls="clr-namespace:CustomWebViewExample.Controls" x:Class="CustomWebViewExample.MainPage">
+    <ScrollView>
+        <Frame Padding="20" BackgroundColor="Teal">
+            <StackLayout>
+                <controls:ExtendedWebView 
+                    x:Name="webView"
+                    SizeChanged="Handle_SizeChanged"
+                    Source="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/webview?tabs=vswin" />
+                <Button Text="Dummy"/>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+</ContentPage>
